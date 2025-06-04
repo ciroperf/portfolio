@@ -26,13 +26,10 @@ function App({ Component, pageProps }) {
 
   return (
     <>
-      {/* Load gtag.js */}
       <Script
         src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
         strategy="afterInteractive"
       />
-
-      {/* Inline script AFTER gtag is loaded */}
       <Script
         id="gtag-init"
         strategy="afterInteractive"

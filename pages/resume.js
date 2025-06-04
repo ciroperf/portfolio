@@ -81,7 +81,7 @@ const Resume = () => {
                 </div>
               </div>
               <div className="mt-5">
-                <h1 className="text-2xl font-bold">Skills</h1>
+                <h1 className="text-2xl font-bold">Technical Skills</h1>
                 <div className="flex mob:flex-col desktop:flex-row justify-between">
                   {resume.languages && (
                     <div className="mt-2 mob:mt-5">
@@ -122,6 +122,33 @@ const Resume = () => {
                     </div>
                   )}
                 </div>
+              </div>
+              <div className="mt-2">
+                {resume.softSkills && (
+                  <div className="mt-2 mob:mt-2">
+                    <h1 className="text-2xl font-bold">Soft Skills</h1>
+                    <ul className="list-disc">
+                      {resume.softSkills.map((skill, index) => (
+                        <li key={index} className="ml-5 py-2">
+                          {skill}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+
+                {resume.spokenLanguages && (
+                  <div className="mt-2 mob:mt-2">
+                    <h1 className="text-2xl font-bold">Spoken Languages</h1>
+                    <ul className="list-disc">
+                      {resume.spokenLanguages.map((lang, index) => (
+                        <li key={index} className="ml-5 py-2">
+                          {lang.language} – {lang.proficiency}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
               </div>
             </div>
           </div>

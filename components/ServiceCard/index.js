@@ -16,9 +16,17 @@ const ServiceCard = ({ name, description }) => {
     >
       <h1 className="text-3xl">{name ? name : "Heading"}</h1>
       <p className="mt-5 opacity-40 text-xl">
-        {description
+        {(description
           ? description
-          : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. "}
+          : `I'm a full-stack software developer with a strong passion for building scalable, high-quality web applications.\n\nI currently work as a consultant at Cluster Reply in Rome, where I develop solutions using C#, Node.js, Angular, and React, and manage cloud infrastructure with Microsoft Azure, Docker, and Kubernetes.\n\nI hold a Master’s degree in Computer Science, with a focus on Cloud Computing, from the University of Salerno, where I graduated with full marks and honors.\n\nMy thesis explored how to counter the spread of fake news on social media using a hybrid approach of agent-based modeling and deep reinforcement learning — combining theory, AI, and practical problem-solving.\n\nTo support my international collaboration and communication skills, I’ve also earned an IELTS Academic certification with an overall band score of 7.0, which corresponds to CEFR level C1.`
+        )
+          .split("\n")
+          .map((line, index) => (
+            <React.Fragment key={index}>
+              {line}
+              <br />
+            </React.Fragment>
+          ))}
       </p>
     </div>
   );
