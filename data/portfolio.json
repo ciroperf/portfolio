@@ -17,7 +17,7 @@
     {
       "id": "2",
       "title": "LinkedIn",
-      "link": "https://www.linkedin.com/in/ciro-perfetto-b07b7a198/"
+      "link": "https://www.linkedin.com/in/ciro-perfetto/"
     },
     { "id": "3", "title": "Email", "link": "mailto:ciroperfetto@hotmail.it" }
   ],
@@ -52,6 +52,13 @@
     },
     {
       "id": "5",
+      "title": "Snap Meta",
+      "description": "I developed and published a Flutter-based mobile app for a popular strategy card game, achieving 5,000+ organic downloads on Google Play. The app keeps users updated on meta trends with a database of cards, game mechanics, news, and tier lists, helping them optimize decks. Built with Flutter/Dart and hosted on GitHub Pages, it cost nothing to run. I managed the full development cycle, from coding to user support.",
+      "imageSrc": "/images/snap-meta.jpg",
+      "url": "https://github.com/ciroperf/snapmeta_app"
+    },
+    {
+      "id": "6",
       "title": "Luxury Automotive",
       "description": "Project developed in collaboration with Accenture. The software is a mobile application for both iOS and Android, designed to support luxury car sales representatives in their customer care activities. The app was built using the Flutter framework for cross-platform development.",
       "imageSrc": "/images/luxury-automotive.jpeg",
