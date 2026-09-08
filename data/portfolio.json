@@ -63,6 +63,13 @@
       "description": "Project developed in collaboration with Accenture. The software is a mobile application for both iOS and Android, designed to support luxury car sales representatives in their customer care activities. The app was built using the Flutter framework for cross-platform development.",
       "imageSrc": "/images/luxury-automotive.jpeg",
       "url": "https://github.com/ciroperf/luxury_automotive"
+    },
+    {
+      "id": "7",
+      "title": "Tris (tic-tac-toe): 1v1 locale o contro CPU",
+      "description": "A browser-based tic-tac-toe game built with vanilla JavaScript and no dependencies. Play locally against another player or challenge an AI opponent, directly from the browser without installation.",
+      "imageSrc": "/images/ai-factory-tic-tac-toe.png",
+      "url": "blog/ai-factory-tic-tac-toe"
     }
   ],
   "services": [],
