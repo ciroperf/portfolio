@@ -63,6 +63,13 @@
       "description": "Project developed in collaboration with Accenture. The software is a mobile application for both iOS and Android, designed to support luxury car sales representatives in their customer care activities. The app was built using the Flutter framework for cross-platform development.",
       "imageSrc": "/images/luxury-automotive.jpeg",
       "url": "https://github.com/ciroperf/luxury_automotive"
+    },
+    {
+      "id": "7",
+      "title": "React Form Schema Builder",
+      "description": "A drag-drop builder for React forms that generates TypeScript components and JSON Schema with real-time validation preview. Built with React, TypeScript, dnd-kit, and React Hook Form to eliminate repetitive form boilerplate.",
+      "imageSrc": "/images/react-form-schema-builder.png",
+      "url": "blog/react-form-schema-builder"
     }
   ],
   "services": [],
