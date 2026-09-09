@@ -63,6 +63,13 @@
       "description": "Project developed in collaboration with Accenture. The software is a mobile application for both iOS and Android, designed to support luxury car sales representatives in their customer care activities. The app was built using the Flutter framework for cross-platform development.",
       "imageSrc": "/images/luxury-automotive.jpeg",
       "url": "https://github.com/ciroperf/luxury_automotive"
+    },
+    {
+      "id": "7",
+      "title": "CardTrader Deck Optimizer",
+      "description": "Desktop application that finds the cheapest combination of sellers on CardTrader's marketplace to buy all cards in a Magic: The Gathering deck. Built with Python, tkinter, and fuzzy matching to streamline card purchasing.",
+      "imageSrc": "/images/cardtrader-shop-optimizer.png",
+      "url": "blog/cardtrader-shop-optimizer"
     }
   ],
   "services": [],
