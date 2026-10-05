@@ -19,13 +19,16 @@ function ProjectCard({ project, featured }: { project: Project; featured: boolea
         rel={external ? "noreferrer" : undefined}
         className={`flex h-full flex-col ${featured ? "md:flex-row" : ""}`}
       >
-        <div className={`relative aspect-video overflow-hidden border-b border-line ${featured ? "md:w-3/5 md:border-r md:border-b-0" : ""}`}>
+        <div
+          className={`flex aspect-video items-center justify-center overflow-hidden border-b border-line bg-ink p-6 ${featured ? "md:w-3/5 md:border-r md:border-b-0" : ""}`}
+        >
           <Image
             src={project.imageSrc}
             alt=""
-            fill
+            width={0}
+            height={0}
             sizes={featured ? "(min-width: 768px) 60vw, 100vw" : "(min-width: 768px) 50vw, 100vw"}
-            className="object-cover opacity-80 grayscale-[40%] transition duration-500 group-hover:scale-105 group-hover:opacity-100 group-hover:grayscale-0"
+            className="h-auto max-h-full w-auto max-w-full rounded-lg opacity-85 transition duration-500 group-hover:scale-[1.03] group-hover:opacity-100"
           />
         </div>
         <div className={`flex flex-1 flex-col p-6 ${featured ? "md:justify-center md:p-10" : ""}`}>
