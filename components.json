@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema.json",
+  "style": "new-york",
+  "rsc": true,
+  "tsx": true,
+  "tailwind": {
+    "config": "",
+    "css": "",
+    "baseColor": "",
+    "cssVariables": false
+  },
+  "aliases": {
+    "components": "@/components/reactbits",
+    "ui": "@/components/reactbits",
+    "utils": "@/lib/utils",
+    "lib": "@/lib",
+    "hooks": "@/hooks"
+  },
+  "registries": {
+    "@react-bits": "https://raw.githubusercontent.com/DavidHDev/react-bits/main/public/r/{name}.json"
+  }
+}

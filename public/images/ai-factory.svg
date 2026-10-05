@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.5" fill="#1f2a2a"/>
+    </pattern>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 10 5 0 10z" fill="#3ddc97"/>
+    </marker>
+  </defs>
+
+  <rect width="1600" height="900" fill="#0a0f0f"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+
+  <text x="100" y="140" fill="#3ddc97" font-size="28">$ officina run --agents 5 --merge human-only</text>
+  <text x="100" y="230" fill="#e6f1ee" font-size="72" font-weight="700">AI Factory</text>
+  <text x="100" y="285" fill="#7d8f8a" font-size="28">GitHub Actions · Claude Code · zero servers</text>
+
+  <g font-size="26" text-anchor="middle">
+    <g fill="#0f1716" stroke="#2a3a37" stroke-width="2">
+      <rect x="100" y="420" width="220" height="120" rx="14"/>
+      <rect x="380" y="420" width="220" height="120" rx="14"/>
+      <rect x="660" y="420" width="220" height="120" rx="14"/>
+      <rect x="940" y="420" width="220" height="120" rx="14"/>
+      <rect x="1220" y="420" width="220" height="120" rx="14"/>
+    </g>
+    <g fill="#e6f1ee" font-weight="700">
+      <text x="210" y="475">Scout</text>
+      <text x="490" y="475">Architect</text>
+      <text x="770" y="475">Builder</text>
+      <text x="1050" y="475">Publisher</text>
+      <text x="1330" y="475">Mentor</text>
+    </g>
+    <g fill="#7d8f8a" font-size="20">
+      <text x="210" y="512">ideas</text>
+      <text x="490" y="512">repo + tasks</text>
+      <text x="770" y="512">branch + PR</text>
+      <text x="1050" y="512">portfolio PR</text>
+      <text x="1330" y="512">learnings</text>
+    </g>
+    <g stroke="#3ddc97" stroke-width="3" marker-end="url(#arrow)">
+      <line x1="322" y1="480" x2="376" y2="480"/>
+      <line x1="602" y1="480" x2="656" y2="480"/>
+      <line x1="882" y1="480" x2="936" y2="480"/>
+      <line x1="1162" y1="480" x2="1216" y2="480"/>
+    </g>
+  </g>
+
+  <path d="M770 542 V640 H1050 V542" fill="none" stroke="#e0a43a" stroke-width="3" stroke-dasharray="10 8"/>
+  <rect x="790" y="610" width="240" height="60" rx="30" fill="#0a0f0f" stroke="#e0a43a" stroke-width="3"/>
+  <text x="910" y="649" fill="#e0a43a" font-size="24" text-anchor="middle">human merges</text>
+
+  <text x="100" y="790" fill="#7d8f8a" font-size="22">branch protection · cost guardrails · kill switch · PWA control panel</text>
+</svg>
