@@ -35,9 +35,15 @@ export default async function BlogPost({ params }: Props) {
         <h1 className="mt-4 text-4xl font-semibold tracking-tighter text-balance sm:text-6xl">{post.title}</h1>
         <p className="mt-4 text-xl text-muted">{post.tagline}</p>
       </header>
-      <div className="relative mt-12 aspect-video overflow-hidden rounded-2xl border border-line">
-        <Image src={post.image} alt="" fill priority sizes="(min-width: 768px) 48rem, 100vw" className="object-cover" />
-      </div>
+      <Image
+        src={post.image}
+        alt=""
+        width={0}
+        height={0}
+        priority
+        sizes="(min-width: 768px) 48rem, 100vw"
+        className="mx-auto mt-12 h-auto max-h-[32rem] w-auto max-w-full rounded-2xl border border-line"
+      />
       <div
         className="prose prose-invert prose-lg mt-14 max-w-none prose-headings:tracking-tight prose-a:text-accent prose-code:text-accent prose-code:before:content-none prose-code:after:content-none prose-pre:border prose-pre:border-line prose-pre:bg-panel prose-th:text-fg"
         dangerouslySetInnerHTML={{ __html: post.html }}
