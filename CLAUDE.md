@@ -35,6 +35,8 @@ These API routes are no-ops in production; never rely on them for runtime behavi
 
 Static images live in `public/images/` and are referenced as `/images/<file>`.
 
+`.mcp.json` registers the shadcn MCP server (`npx shadcn@latest mcp`; `shadcn` is also a devDependency). shadcn has not been initialized yet (no `components.json`), and existing components are hand-written Tailwind in `components/<Name>/index.js`.
+
 ## Automated project publishing
 
 `.github/workflows/agent-publisher.yml` (comments in Italian) runs Claude Code on `repository_dispatch: publish-project` or manual dispatch with `slug`, `title`, and project repo. It creates branch `agent/portfolio-<slug>` and opens a PR to `main` (never merges) that:
