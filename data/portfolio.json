@@ -1,25 +1,57 @@
 {
-  "name": "Ciro",
-  "headerTaglineOne": "Hello 👋",
-  "headerTaglineTwo": "I'm Ciro Perfetto - curious",
-  "headerTaglineThree": "Full Stack Devloper",
-  "headerTaglineFour": " based in Naples, Italy.",
-  "showCursor": true,
-  "showBlog": true,
-  "darkMode": true,
-  "showResume": true,
+  "name": "Ciro Perfetto",
+  "role": "Software Engineer",
+  "location": "Naples, Italy",
+  "greeting": "Hello 👋 I'm",
+  "roles": [
+    "a Software Engineer building with AI agents.",
+    "a full-stack developer: .NET, Node.js, Python.",
+    "a Microsoft Certified DevOps Engineer Expert.",
+    "curious, and always shipping something."
+  ],
+  "summary": "Three years of enterprise consulting on backend services, RESTful APIs and microservices, from analysis to delivery. I work daily with agentic coding tools and build AI agents that ship real code behind human review.",
+  "about": [
+    "I'm a Software Engineer with three years of enterprise consulting behind me: backend services, RESTful APIs and microservices, taken from analysis all the way to delivery.",
+    "I work at Cluster Reply in Rome, where I design .NET microservices and SQL Server schemas running on Docker and Kubernetes, and build Python APIs with FastAPI, LangChain and Azure OpenAI in which AI agents automate checks on financial documentation.",
+    "I use agentic coding tools like Claude Code and GitHub Copilot every day, and I've taken them beyond the editor: AI Factory is a system of agents that designs, builds and opens pull requests on GitHub Actions, behind branch protection and cost guardrails. This portfolio is wired into it.",
+    "I hold a Master's degree in Computer Science (Cloud Computing) from the University of Salerno, graduated 110/110 cum laude, with a thesis on agent-based modeling and deep reinforcement learning against fake news. I'm a Microsoft Certified DevOps Engineer Expert (AZ-400) and speak English at C1 level.",
+    "Outside of work I play guitar and bass, go to the gym and build custom PCs."
+  ],
+  "stats": [
+    {
+      "value": 3,
+      "suffix": "+",
+      "label": "years of enterprise consulting"
+    },
+    {
+      "value": 30,
+      "suffix": "%",
+      "label": "faster API responses delivered"
+    },
+    {
+      "value": 5,
+      "suffix": "",
+      "label": "AI agents shipping code in AI Factory"
+    },
+    {
+      "value": 5000,
+      "suffix": "+",
+      "label": "organic downloads of Snap Meta"
+    }
+  ],
   "socials": [
     {
-      "id": "1",
       "title": "Github",
       "link": "https://github.com/ciroperf"
     },
     {
-      "id": "2",
       "title": "LinkedIn",
       "link": "https://www.linkedin.com/in/ciro-perfetto/"
     },
-    { "id": "3", "title": "Email", "link": "mailto:ciroperfetto@hotmail.it" }
+    {
+      "title": "Email",
+      "link": "mailto:ciroperfetto@hotmail.it"
+    }
   ],
   "projects": [
     {
@@ -70,70 +102,171 @@
       "description": "Demonstrates with concrete data the advantages of caching with Redis in an enterprise context. Compares API performance with and without Redis cache through structured benchmarking, with results visualized in graphs ready for presentations.",
       "imageSrc": "/images/redis-sample.png",
       "url": "blog/redis-sample"
+    },
+    {
+      "id": "8",
+      "title": "AI Factory",
+      "description": "A system of five AI agents running on GitHub Actions with Claude Code that propose ideas, create repositories, build features on branches and open pull requests. Branch protection, Python cost guardrails and a zero-dependency PWA control panel keep a human in charge of every merge, with zero servers to run.",
+      "imageSrc": "/images/ai-factory.svg",
+      "url": "blog/ai-factory"
     }
   ],
-  "services": [],
-  "aboutpara": "I'm a full-stack software developer with a strong passion for building scalable, high-quality web applications.\n\nI currently work as a consultant at Cluster Reply in Rome, where I develop solutions using C#, Node.js, Angular, and React, and manage cloud infrastructure with Microsoft Azure, Docker, and Kubernetes.\n\nI hold a Master’s degree in Computer Science, with a focus on Cloud Computing, from the University of Salerno, where I graduated with full marks and honors.\n\nMy thesis explored how to counter the spread of fake news on social media using a hybrid approach of agent-based modeling and deep reinforcement learning — combining theory, AI, and practical problem-solving.\n\nOutside of work, I love experimenting with new technologies, building bots, playing guitar and bass, staying active at the gym, and assembling custom PCs. I'm Microsoft certified (PL-900, AZ-900, AZ-204) and continuously learning to stay ahead in a fast-evolving tech landscape.",
-  "resume": {
-    "tagline": "💻 Passionate Full-Stack Developer | Cloud Enthusiast | Problem Solver",
-    "description": "I specialize in building scalable, high-quality web applications using modern frameworks and cloud infrastructure. I'm driven by curiosity, continuous learning, and a strong desire to solve real-world problems through code.",
-    "experiences": [
-      {
-        "id": "1",
-        "dates": "October 2023 – Present",
-        "type": "Full Time",
-        "position": "Software Developer at Cluster Reply Rome",
-        "bullets": [
-          "Developed and maintained scalable enterprise web applications using C#, Angular, and React.",
-          "Managed Azure infrastructure using services like AKS, App Services, and Docker.",
-          "Collaborated in Agile teams, contributing to architecture discussions and cross-functional planning.",
-          "Implemented REST APIs and database integrations with MySQL and MSSQL."
-        ]
-      }
-    ],
-    "education": {
-      "universityName": "University of Salerno",
-      "universityDate": "2020 – 2023",
-      "universityPara": "Master’s Degree in Computer Science – Cloud Computing. Graduated with full marks and honors. Thesis focused on combining agent-based modeling and deep reinforcement learning to simulate and mitigate fake news diffusion on social networks."
+  "experience": [
+    {
+      "dates": "October 2023 – Present",
+      "type": "Full Time",
+      "position": "Full Stack Developer (Consultant) at Cluster Reply, Rome",
+      "bullets": [
+        "Designed and built .NET microservices and REST APIs with optimized HTTP endpoints, cutting user query response times by 30%.",
+        "Designed and maintained SQL Server schemas with solid domain modeling for 100+ concurrent users on Docker and Kubernetes, reducing query times by 20%.",
+        "Built Python APIs (FastAPI, LangChain, Azure OpenAI) where AI agents automate 10+ checks on financial documentation, with an event-driven architecture, sync/async processing and correlation-ID tracing.",
+        "Ran code reviews and mentored junior developers, identifying four areas of application efficiency improvement."
+      ]
     },
-    "languages": [
-      "C",
-      "C#",
-      "JavaScript",
-      "TypeScript",
-      "HTML5",
-      "CSS3",
-      "Python",
-      "Netlogo",
-      "SQL"
-    ],
-    "frameworks": ["React", "Angular", "Node.js", "Flutter", ".NET", "Express"],
-    "others": [
-      "Azure (AKS, Functions, App Services)",
-      "Docker",
-      "Git",
-      "CI/CD",
-      "Scrum/Agile",
-      "Microsoft Certifications: PL-900, AZ-900, AZ-204"
-    ],
-    "softSkills": [
-      "Problem-solving",
-      "Team collaboration",
-      "Communication",
-      "Adaptability",
-      "Time management",
-      "Critical thinking",
-      "Curiosity and continuous learning"
-    ],
-    "spokenLanguages": [
-      {
-        "language": "Italian",
-        "proficiency": "Native"
-      },
-      {
-        "language": "English",
-        "proficiency": "C1 – Advanced (IELTS Academic 7.0)"
-      }
-    ]
-  }
+    {
+      "dates": "January 2025 – April 2025",
+      "type": "Contract",
+      "position": "AI Developer – Prompt Engineering & Code at Outlier",
+      "bullets": [
+        "Improved a Large Language Model through Python code and 10+ adversarial prompts for model evaluation, raising response accuracy by 30% in four months.",
+        "Led the development of a new testing framework, reaching 100% code coverage."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master's Degree in Computer Science – Cloud Computing",
+      "school": "University of Salerno",
+      "dates": "2020 – 2023",
+      "grade": "110/110 cum laude",
+      "details": "Thesis on agent-based modeling and deep reinforcement learning to curb fake news diffusion on social networks, with up to 55% less exposure."
+    },
+    {
+      "degree": "Bachelor's Degree in Computer Science",
+      "school": "University of Salerno",
+      "dates": "2017 – 2020",
+      "grade": "103/110",
+      "details": ""
+    }
+  ],
+  "skills": [
+    {
+      "label": "Languages",
+      "items": [
+        "TypeScript",
+        "JavaScript (ES6+)",
+        "Python",
+        "C#",
+        "Java",
+        "C",
+        "SQL",
+        "HTML5",
+        "CSS3",
+        "NetLogo"
+      ]
+    },
+    {
+      "label": "Backend & frontend",
+      "items": [
+        "Node.js",
+        "Express",
+        "FastAPI",
+        ".NET",
+        "React",
+        "Next.js",
+        "Angular",
+        "Tailwind CSS",
+        "Flutter"
+      ]
+    },
+    {
+      "label": "Cloud & DevOps",
+      "items": [
+        "Docker",
+        "Kubernetes (AKS)",
+        "GitHub Actions",
+        "Azure DevOps",
+        "Microsoft Azure",
+        "Azure Functions",
+        "App Services",
+        "AWS",
+        "Linux",
+        "CI/CD",
+        "Git"
+      ]
+    },
+    {
+      "label": "Data",
+      "items": [
+        "SQL Server",
+        "PostgreSQL",
+        "MySQL",
+        "Cosmos DB",
+        "MongoDB"
+      ]
+    },
+    {
+      "label": "AI-native development",
+      "items": [
+        "Claude Code",
+        "GitHub Copilot",
+        "AI agents",
+        "LangChain",
+        "Azure OpenAI",
+        "Prompt engineering",
+        "LLM evaluation"
+      ]
+    },
+    {
+      "label": "Ways of working",
+      "items": [
+        "Scrum/Agile",
+        "Code review",
+        "Mentoring",
+        "Problem-solving",
+        "Team collaboration",
+        "Communication",
+        "Adaptability",
+        "Time management",
+        "Critical thinking",
+        "Curiosity and continuous learning"
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Microsoft Certified: DevOps Engineer Expert (AZ-400)",
+      "date": "Dec 2025"
+    },
+    {
+      "name": "Microsoft Certified: Azure Developer Associate (AZ-204)",
+      "date": "Dec 2024"
+    },
+    {
+      "name": "Microsoft Certified: Azure Fundamentals (AZ-900)",
+      "date": "Oct 2023"
+    },
+    {
+      "name": "Microsoft Certified: Power Platform Fundamentals (PL-900)",
+      "date": ""
+    },
+    {
+      "name": "GeeksforGeeks: DSA & System Design – SDE Interview Prep",
+      "date": "Sep 2026"
+    },
+    {
+      "name": "IELTS Academic 7.0 – CEFR C1",
+      "date": "valid until May 2027"
+    }
+  ],
+  "spokenLanguages": [
+    {
+      "language": "Italian",
+      "proficiency": "Native"
+    },
+    {
+      "language": "English",
+      "proficiency": "C1 – Advanced (IELTS Academic 7.0)"
+    }
+  ]
 }
