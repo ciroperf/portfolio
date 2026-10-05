@@ -63,6 +63,13 @@
       "description": "Project developed in collaboration with Accenture. The software is a mobile application for both iOS and Android, designed to support luxury car sales representatives in their customer care activities. The app was built using the Flutter framework for cross-platform development.",
       "imageSrc": "/images/luxury-automotive.jpeg",
       "url": "https://github.com/ciroperf/luxury_automotive"
+    },
+    {
+      "id": "7",
+      "title": "Redis Cache Benchmark",
+      "description": "Demonstrates with concrete data the advantages of caching with Redis in an enterprise context. Compares API performance with and without Redis cache through structured benchmarking, with results visualized in graphs ready for presentations.",
+      "imageSrc": "/images/redis-sample.png",
+      "url": "blog/redis-sample"
     }
   ],
   "services": [],
