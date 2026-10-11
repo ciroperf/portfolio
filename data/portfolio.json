@@ -109,6 +109,13 @@
       "description": "A system of five AI agents running on GitHub Actions with Claude Code that propose ideas, create repositories, build features on branches and open pull requests. Branch protection, Python cost guardrails and a zero-dependency PWA control panel keep a human in charge of every merge, with zero servers to run.",
       "imageSrc": "/images/ai-factory.svg",
       "url": "blog/ai-factory"
+    },
+    {
+      "id": "9",
+      "title": "Mini MVP",
+      "description": "A minimal but production-ready case study for cloud-native Python backends: REST API for CRUD notes with FastAPI, Postgres, Redis cache-aside pattern, Kubernetes manifests, Prometheus metrics and structured JSON logging.",
+      "imageSrc": "/images/mini-mvp.png",
+      "url": "blog/mini-mvp"
     }
   ],
   "experience": [
