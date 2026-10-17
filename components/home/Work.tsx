@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import SpotlightCard from "@/components/reactbits/SpotlightCard";
 import SectionHeading from "@/components/site/SectionHeading";
-import { isExternal, projectHref, projects, type Project } from "@/lib/content";
+import { academicProjects, isExternal, projectHref, projects, type Project } from "@/lib/content";
 
 function ProjectCard({ project, featured }: { project: Project; featured: boolean }) {
   const href = projectHref(project);
@@ -55,6 +55,40 @@ export default function Work() {
           <ProjectCard key={project.id} project={project} featured={i === 0} />
         ))}
       </div>
+      {academicProjects.length > 0 && (
+        <div className="mt-20">
+          <h3 className="font-mono text-sm text-accent">
+            <span className="text-muted">{"//"}</span> academic &amp; hpc
+          </h3>
+          <ul className="mt-6 border-t border-line">
+            {academicProjects.map((project) => {
+              const href = projectHref(project);
+              const external = isExternal(href);
+              return (
+                <li key={project.id} className="border-b border-line">
+                  <Link
+                    href={href}
+                    target={external ? "_blank" : undefined}
+                    rel={external ? "noreferrer" : undefined}
+                    className="group grid gap-2 py-6 md:grid-cols-[4rem_1fr_auto] md:gap-8"
+                  >
+                    <span className="font-mono text-xs text-muted md:pt-1.5">0x{project.id.padStart(2, "0")}</span>
+                    <div>
+                      <p className="text-xl font-semibold tracking-tight transition-colors group-hover:text-accent">
+                        {project.title}
+                      </p>
+                      <p className="mt-2 line-clamp-2 max-w-3xl text-muted">{project.description}</p>
+                    </div>
+                    <span className="font-mono text-sm text-muted transition-colors group-hover:text-accent md:pt-1">
+                      {external ? "source ↗" : "read →"}
+                    </span>
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      )}
     </section>
   );
 }

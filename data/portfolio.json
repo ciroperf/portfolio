@@ -34,9 +34,9 @@
       "label": "AI agents shipping code in AI Factory"
     },
     {
-      "value": 5000,
+      "value": 10,
       "suffix": "+",
-      "label": "organic downloads of Snap Meta"
+      "label": "financial checks automated by AI agents"
     }
   ],
   "socials": [
@@ -66,21 +66,24 @@
       "title": "All to All MPI Optimization",
       "description": "Implemented and analyzed multiple All-to-All communication algorithms using OpenMPI, based on optimization strategies presented in scientific literature. The project focused on performance evaluation and parallel communication efficiency.",
       "imageSrc": "/images/all-to-all-collective.png",
-      "url": "https://github.com/MajidSalimi/HPC-2022/tree/main/AlltoAll"
+      "url": "https://github.com/MajidSalimi/HPC-2022/tree/main/AlltoAll",
+      "academic": true
     },
     {
       "id": "3",
       "title": "GitProtocol P2P",
       "description": "In this project, a basic implementation of the Git protocol was created using a P2P (peer-to-peer) network. Each peer in the network can manage its own projects (a set of files) using a simplified version of the Git protocol. The system allows users to create a new repository in a specific folder, add new files to be tracked, apply changes to the local repository (commit function), push changes to the network, and pull changes from the network. The Git protocol follows a specific behavior to handle conflicts, which are then resolved manually.",
       "imageSrc": "/images/git-protocol.png",
-      "url": "https://github.com/ciroperf/GitProtocol"
+      "url": "https://github.com/ciroperf/GitProtocol",
+      "academic": true
     },
     {
       "id": "4",
       "title": "MPI Parallel Game Of Life",
       "description": "Project completed as part of the \"Concurrent and Parallel Programming on the Cloud\" course.It presents a solution to the Game of Life problem by leveraging parallelism through the OpenMPI library. The program was executed on an AWS cluster, and performance metrics were analyzed.The project received the highest possible grade in the course.",
       "imageSrc": "/images/Gospers_glider_gun.gif",
-      "url": "https://github.com/ciroperf/mpi-parallel-game-of-life"
+      "url": "https://github.com/ciroperf/mpi-parallel-game-of-life",
+      "academic": true
     },
     {
       "id": "5",
