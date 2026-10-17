@@ -5,7 +5,11 @@ export type Project = (typeof portfolio.projects)[number];
 export const content = portfolio;
 
 /** Projects are appended to the data file over time; show the newest first. */
-export const projects: Project[] = [...portfolio.projects].reverse();
+const newestFirst: Project[] = [...portfolio.projects].reverse();
+
+/** Coursework is listed compactly under the main cards, so it doesn't crowd them. */
+export const projects = newestFirst.filter((project) => !project.academic);
+export const academicProjects = newestFirst.filter((project) => project.academic);
 
 /** Data files store blog links as "blog/<slug>"; make them root-relative. */
 export function projectHref(project: Project) {

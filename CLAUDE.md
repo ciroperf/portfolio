@@ -24,7 +24,7 @@ npx serve out   # preview the production build locally
 
 ## Architecture
 
-**Content is data.** `data/portfolio.json` holds everything shown on the site: identity and hero text, stats, `about` paragraphs, socials, `projects`, `experience`, `education`, `skills`, `certifications`, `spokenLanguages`. `lib/content.ts` re-exports it (types are inferred from the JSON) and owns the small display rules: projects are rendered newest-first (reverse file order), and `projectHref` turns the stored `"blog/<slug>"` form into a root-relative link. To change copy, edit the JSON, not the components.
+**Content is data.** `data/portfolio.json` holds everything shown on the site: identity and hero text, stats, `about` paragraphs, socials, `projects`, `experience`, `education`, `skills`, `certifications`, `spokenLanguages`. `lib/content.ts` re-exports it (types are inferred from the JSON) and owns the small display rules: projects are rendered newest-first (reverse file order), entries with `"academic": true` go in a compact list under the cards instead of the grid, and `projectHref` turns the stored `"blog/<slug>"` form into a root-relative link. To change copy, edit the JSON, not the components.
 
 **Blog.** Markdown posts with gray-matter frontmatter (`date`, `title`, `tagline`, `preview`, `image`) live in `_posts/`; the filename is the slug. `lib/posts.ts` reads them and renders Markdown to HTML at build time (remark + GFM). `app/blog/[slug]` uses `generateStaticParams` with `dynamicParams = false`, so a new post only exists after a rebuild. Post HTML is styled with `@tailwindcss/typography` (`prose` classes).
 
