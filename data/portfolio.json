@@ -13,7 +13,7 @@
   "about": [
     "I'm a Software Engineer with three years of enterprise consulting behind me: backend services, RESTful APIs and microservices, taken from analysis all the way to delivery.",
     "I work at Cluster Reply in Rome, where I design .NET microservices and SQL Server schemas running on Docker and Kubernetes, and build Python APIs with FastAPI, LangChain and Azure OpenAI in which AI agents automate checks on financial documentation.",
-    "I use agentic coding tools like Claude Code and GitHub Copilot every day, and I've taken them beyond the editor: AI Factory is a system of agents that designs, builds and opens pull requests on GitHub Actions, behind branch protection and cost guardrails. This portfolio is wired into it.",
+    "I use agentic coding tools like Claude Code and GitHub Copilot every day, and I've taken them beyond the editor: AI Factory is a system of agents that designs, builds and opens pull requests on GitHub Actions, behind branch protection and cost guardrails. This portfolio is wired into it. I also publish open-source agent skills for Claude Code and Codex: right-size, which sizes the model and effort each coding task gets, and patternwise, which refactors with design patterns only where they pay off.",
     "I hold a Master's degree in Computer Science (Cloud Computing) from the University of Salerno, graduated 110/110 cum laude, with a thesis on agent-based modeling and deep reinforcement learning against fake news. I'm a Microsoft Certified DevOps Engineer Expert (AZ-400) and speak English at C1 level.",
     "Outside of work I play guitar and bass, go to the gym and build custom PCs."
   ],
@@ -112,6 +112,20 @@
       "description": "A system of five AI agents running on GitHub Actions with Claude Code that propose ideas, create repositories, build features on branches and open pull requests. Branch protection, Python cost guardrails and a zero-dependency PWA control panel keep a human in charge of every merge, with zero servers to run.",
       "imageSrc": "/images/ai-factory.svg",
       "url": "blog/ai-factory"
+    },
+    {
+      "id": "9",
+      "title": "patternwise",
+      "description": "An open-source agent skill for Claude Code and Codex that applies design patterns and refactoring only where they pay off. It judges the patterns already in the code, reports smells with file:line evidence, and refactors in small test-backed steps only after you approve the plan. Checked against answer keys and on axios, httpie and Django, with no invented file citations.",
+      "imageSrc": "/images/patternwise.svg",
+      "url": "blog/patternwise"
+    },
+    {
+      "id": "10",
+      "title": "right-size",
+      "description": "Open-source Agent Skills and a small router that give every coding task the compute it deserves: whether to delegate to a subagent, which model tier and which reasoning effort, translated into native config for Claude Code and Codex. A public benchmark on real bug fixes backs it: maximum effort cost 3.9x more and solved nothing extra, while a Sonnet session fixed the same bugs for 60% less.",
+      "imageSrc": "/images/right-size.svg",
+      "url": "blog/right-size"
     }
   ],
   "experience": [
@@ -216,6 +230,7 @@
         "AI agents",
         "LangChain",
         "Azure OpenAI",
+        "Agent Skills",
         "Prompt engineering",
         "LLM evaluation"
       ]
