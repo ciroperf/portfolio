@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.5" fill="#1f2a2a"/>
+    </pattern>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 10 5 0 10z" fill="#3ddc97"/>
+    </marker>
+  </defs>
+
+  <rect width="1600" height="900" fill="#0a0f0f"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+
+  <text x="100" y="140" fill="#3ddc97" font-size="28">$ /patternwise analyze shop/</text>
+  <text x="100" y="230" fill="#e6f1ee" font-size="72" font-weight="700">patternwise</text>
+  <text x="100" y="285" fill="#7d8f8a" font-size="28">design patterns, only where they pay off</text>
+
+  <g font-size="26" text-anchor="middle">
+    <g fill="#0f1716" stroke="#2a3a37" stroke-width="2">
+      <rect x="100" y="400" width="400" height="140" rx="14"/>
+      <rect x="600" y="400" width="400" height="140" rx="14"/>
+      <rect x="1100" y="400" width="400" height="140" rx="14"/>
+    </g>
+    <g fill="#e6f1ee" font-weight="700">
+      <text x="300" y="455">code smell</text>
+      <text x="800" y="455">refactoring</text>
+      <text x="1300" y="455">design pattern</text>
+    </g>
+    <g fill="#7d8f8a" font-size="20">
+      <text x="300" y="495">switch on customer_type</text>
+      <text x="300" y="522">orders.py:35, 54, 106</text>
+      <text x="800" y="495">Replace Conditional</text>
+      <text x="800" y="522">with Polymorphism</text>
+      <text x="1300" y="495">Strategy, as a dict</text>
+      <text x="1300" y="522">of functions</text>
+    </g>
+    <g stroke="#3ddc97" stroke-width="3" marker-end="url(#arrow)">
+      <line x1="502" y1="470" x2="596" y2="470"/>
+      <line x1="1002" y1="470" x2="1096" y2="470"/>
+    </g>
+  </g>
+
+  <g font-size="22">
+    <g fill="#0a0f0f" stroke-width="2">
+      <rect x="100" y="610" width="150" height="50" rx="25" stroke="#3ddc97"/>
+      <rect x="270" y="610" width="190" height="50" rx="25" stroke="#e0a43a"/>
+      <rect x="480" y="610" width="180" height="50" rx="25" stroke="#e0a43a"/>
+      <rect x="680" y="610" width="250" height="50" rx="25" stroke="#e0a43a"/>
+      <rect x="950" y="610" width="170" height="50" rx="25" stroke="#7d8f8a"/>
+    </g>
+    <g text-anchor="middle">
+      <text x="175" y="643" fill="#3ddc97">sound</text>
+      <text x="365" y="643" fill="#e0a43a">misapplied</text>
+      <text x="570" y="643" fill="#e0a43a">name only</text>
+      <text x="805" y="643" fill="#e0a43a">over-engineered</text>
+      <text x="1035" y="643" fill="#7d8f8a">uncertain</text>
+    </g>
+  </g>
+
+  <text x="100" y="790" fill="#7d8f8a" font-size="22">file:line evidence · plan → your approval → tests after every step</text>
+</svg>
